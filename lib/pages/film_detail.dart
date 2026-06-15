@@ -16,7 +16,9 @@ class FilmDetailPage extends StatelessWidget {
       } else if (i == fullStars && hasHalfStar) {
         stars.add(const Icon(Icons.star_half, color: Colors.orange, size: 24));
       } else {
-        stars.add(const Icon(Icons.star_border, color: Colors.orange, size: 24));
+        stars.add(
+          const Icon(Icons.star_border, color: Colors.orange, size: 24),
+        );
       }
     }
     return stars;
@@ -25,7 +27,7 @@ class FilmDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 240, 240, 240),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         leading: IconButton(
